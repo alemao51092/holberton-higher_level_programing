@@ -5,4 +5,3 @@ if __name__ == "__main__":
     for index in range(1, len(argv)):
         sum += int(argv[index])
     print("{}".format(sum))
-    
