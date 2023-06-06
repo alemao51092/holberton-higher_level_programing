@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
     lenght = len(sentence)
-    if sentence == None:
-        fchar = None
-    fchar = sentence[0] if lenght > 0 else None
-    return lenght, fchar
+    if len(sentence) > 0:
+        latupla = (lenght, sentence[0])
+    else:
+        latupla = (lenght, None)
+    return latupla
