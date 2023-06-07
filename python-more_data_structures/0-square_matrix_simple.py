@@ -2,9 +2,6 @@
 def square_matrix_simple(matrix=[]):
     newmatrix = []
     for row in matrix:
-        squarerow = []
-        for num in row:
-            squarenum = num ** 2
-            squarerow.append(squarenum)
+        squarerow = [num ** 2 for num in row]
         newmatrix.append(squarerow)
     return newmatrix
