@@ -3,9 +3,9 @@
 def list_division(my_list_1, my_list_2, list_length):
     newList = []
     errorList = []
-    for idx in range(list_length):
+    for i in range(list_length):
         try:
-            division = my_list_1[idx] / my_list_2[idx]
+            division = my_list_1[i] / my_list_2[i]
             newList.append(division)
         except ZeroDivisionError:
             errorList.append("division by 0")
