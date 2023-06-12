@@ -11,7 +11,7 @@ class Square:
         """ Instantiation """
         self.__size = size
         self.__position = position
-        
+
         if len(self.__position) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         if (type(self.__position[0])) != int:
@@ -24,7 +24,7 @@ class Square:
     @property
     def size(self):
         return self.__size
-    
+
     @property
     def position(self):
         return self.__position
@@ -36,15 +36,15 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
+
     @position.setter
     def position(self, value):
         if self.__position:
             for i in self.__position:
                 if i < 0 or type(i) is not int:
-                    raise TypeError("position must be a tuple of 2 positive integers")
+                    raise TypeError
         self.__position = value
-                
+
     def area(self):
 
         """ Calculet the area"""
