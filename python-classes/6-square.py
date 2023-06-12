@@ -36,15 +36,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-
-    @position.setter
-    def position(self, value):
-        if self.__position:
-            for i in self.__position:
-                if i < 0 or type(i) is not int:
-                    raise TypeError
-        self.__position = value
-
+    
     def area(self):
 
         """ Calculet the area"""
