@@ -20,6 +20,9 @@ def matrix_divided(matrix, div):
     if div is None:
         raise TypeError("missing 1 required positional argument: 'div'")
     for row in matrix:
-        divrow = [round(element / div, 2) for element in row]
+        divrow = []
+        for item in row:
+            divele = round(item / div, 2)
+            divrow.append(divele)
         divmatrix.append(divrow)
     return divmatrix
