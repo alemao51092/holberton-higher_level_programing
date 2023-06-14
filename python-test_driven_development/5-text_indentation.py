@@ -2,20 +2,24 @@
 """shebang"""
 
 
+#!/usr/bin/python3
+"Task 4"
+
+
 def text_indentation(text):
-    """text indentation"""
-    newtext = ""
-    spacecheck = False
+    '''Prints a text with 2 new lines after each of
+    these character: ".", "?" and ":"'''
+    SpaceCheck = False
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    for char in range(len(text)):
-        if text[char - 1] in [".", "?", ":"]:
-            newtext += text[char] + "\n\n"
-            spacecheck = True
-        if spacecheck:
-            if char < len(text) - 1 and text[char + 1] == " ":
+    for i in range(len(text)):
+        if text[i - 1] in {".", "?", ":"}:
+            print()
+            print()
+            SpaceCheck = True
+        if SpaceCheck:
+            if i < len(text) - 1 and text[i + 1] == " ":
                 continue
-            spacecheck = False
+            SpaceCheck = False
         else:
-            newtext += text[char]
-    print(newtext, end='')
+            print(text[i], end="")
