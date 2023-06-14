@@ -3,6 +3,7 @@
 
 
 def say_my_name(first_name, last_name=""):
+    """print name"""
     name1 = first_name
     lastname1 = last_name
     if not isinstance(first_name, str):
