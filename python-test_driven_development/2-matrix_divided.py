@@ -7,8 +7,6 @@ def matrix_divided(matrix, div):
     err = "matrix must be a matrix (list of lists) of integers/floats"
     divmatrix = []
     firstrowlenght = len(matrix[0])
-    if not matrix:
-        TypeError("matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'")
     for row in matrix:
         if len(row) != firstrowlenght:
             raise TypeError("Each row of the matrix must have the same size")
