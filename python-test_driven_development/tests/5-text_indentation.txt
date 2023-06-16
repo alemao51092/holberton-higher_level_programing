@@ -19,11 +19,8 @@ TypeError: text must be a string
 Traceback (most recent call last):
 TypeError: text must be a string
 
->>> text_indentation("Lorem ipsum. dolor sit amet? adipiscing elit: Quonam")
-Lorem ipsum.
+>>> text_indentation("Lorem? ipsum dolor sit amet, consectetur adipiscing elit.")
+Lorem?
 <BLANKLINE>
-dolor sit amet?
+ipsum dolor sit amet, consectetur adipiscing elit.
 <BLANKLINE>
-adipiscing elit:
-<BLANKLINE>
-Quonam
