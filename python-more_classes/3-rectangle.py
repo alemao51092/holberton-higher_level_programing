@@ -16,7 +16,6 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         if width < 0:
             raise ValueError("width must be >= 0")
-
         self.width = width
         self.height = height
 
@@ -60,11 +59,11 @@ class Rectangle:
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
-            return 0
+            return ""
         rectangulo = ""
         for k in range(self.__height):
             for j in range(self.__width):
                 rectangulo += "#"
-            if k < self.__height - 1:
+            if k < (self.__height) - 1:
                 rectangulo += "\n"
         return rectangulo
