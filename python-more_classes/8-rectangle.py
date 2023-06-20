@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 "Task 1 of more_classes"
 
 
