@@ -1,1 +1,1 @@
-yo soy un loco que se di cuenta 
+yo soy un loco que se dio cuenta 
