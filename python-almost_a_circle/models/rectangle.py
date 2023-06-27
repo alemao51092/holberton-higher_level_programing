@@ -107,7 +107,7 @@ class Rectangle(Base):
         return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - "
                 f"{self.__width}/{self.__height}")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         "hola manola, Nacional nacional"
         if args and len(args) != 0:
             try:
@@ -118,3 +118,6 @@ class Rectangle(Base):
                 self.__y = args[4]
             except IndexError:
                 pass
+        else:
+            for k, v in kwargs.items():
+                setattr(self, k, v)
