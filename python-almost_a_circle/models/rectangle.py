@@ -108,7 +108,7 @@ class Rectangle(Base):
                 f"{self.__width}/{self.__height}")
 
     def update(self, *args):
-        "juju"
+        "hola manola, Nacional nacional"
         if args and len(args) != 0:
             try:
                 self.id = args[0]
