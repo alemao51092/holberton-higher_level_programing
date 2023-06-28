@@ -16,3 +16,18 @@ class Square(Rectangle):
             f"[Square] ({self.id}) {self.x}/{self.y}"
             f" - {self.width}"
         )
+
+    @property
+    def size(self):
+        "return width"
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        "Setter of the size"
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+        if value < 0:
+            raise ValueError("size must be > 0")
+        self.width = value
+        self.height = value
