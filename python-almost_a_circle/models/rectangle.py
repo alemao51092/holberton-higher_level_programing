@@ -124,6 +124,7 @@ class Rectangle(Base):
                 setattr(self, k, v)
 
     def to_dictionary(self):
+        "update dictionary"
         return {
             "id": self.id,
             "width": self.width,
